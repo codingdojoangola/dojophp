@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/codingdojoangola/dojophp.svg?branch=master)](https://travis-ci.org/codingdojoangola/dojophp)
+
 # dojophp
 Desafios e metas de estudo PHP
 
