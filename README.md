@@ -20,13 +20,33 @@ namespace DojoPHP\Desafios;
 class Nomedoexercicio
 {
 	/**
-	 * [nomedaFuncao description]
+	 * nomedaFuncao *Aqui a descrição*
 	 * @return "aqui o tipo de dado
-	 * (exemplo: array, boolean, void) "Aqui a descrição da função (sem as aspas)"
+	 * (exemplo: array, boolean, void)
 	 */
 	public function nomedaFuncao()
 	{
 		// Código da sua função aqui dentro da função
+	}
+}
+
+```
+
+De seguida crie igualmente uma classe de teste referente ao exercício anteriormente criado.
+
+```php
+
+namespace DojoPHP\Tests;
+
+class NomedoexercicioTest
+{
+	/**
+	 * testNomedafuncao *Aqui a descrição*
+	 * @return "aqui o tipo de dado (exemplo: array, boolean, void)
+	 */
+	public function testNomedafuncao()
+	{
+		// O código da sua função de teste aqui.
 	}
 }
 
