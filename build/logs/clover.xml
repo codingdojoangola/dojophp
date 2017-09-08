@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1504848523">
+  <project timestamp="1504848523">
+    <package name="DojoPHP\Desafios">
+      <file name="/Applications/MAMP/htdocs/dojophp/src/Calculadora.php">
+        <class name="Calculadora" namespace="DojoPHP\Desafios">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        </class>
+        <line num="10" type="method" name="calcularIdade" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <metrics loc="14" ncloc="9" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="DojoPHP">
+      <file name="/Applications/MAMP/htdocs/dojophp/src/MyCalculadora.php">
+        <class name="MyCalculadora" namespace="DojoPHP">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+        </class>
+        <line num="10" type="method" name="getDataAtual" visibility="private" complexity="1" crap="1" count="1"/>
+        <line num="11" type="stmt" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="15" type="method" name="_getAno" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <metrics loc="24" ncloc="24" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </file>
+    </package>
+    <metrics files="2" loc="38" ncloc="33" classes="2" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="6" elements="11" coveredelements="8"/>
+  </project>
+</coverage>
