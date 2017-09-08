@@ -1,4 +1,4 @@
 /vendor/
 *.log
-/.ideia/
-/build/
+.ideia/
+build/
