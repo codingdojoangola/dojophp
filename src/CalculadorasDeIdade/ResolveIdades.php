@@ -18,9 +18,11 @@ use DateTime;
  *
  * Boom! Falhou... :)
  *
- * Interessante essa função floor()
+ * Interessante essa função floor().
  *
  * @see www.hackingwithphp.com/4/6/1/rounding
+ *
+ * @author Eleandro Duzentos <eleandro@inbox.ru|github:e200>
  *
  * @package DojoPHP
  */
@@ -31,7 +33,7 @@ class ResolveIdades
      *
      * @param $dataDeNascimento
      *
-     * @return float
+     * @return int
      */
     function comData($dataDeNascimento)
     {
