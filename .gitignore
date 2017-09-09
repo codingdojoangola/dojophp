@@ -4,3 +4,4 @@ composer.lock
 *.log
 /.ideia/
 /build/
+.idea
