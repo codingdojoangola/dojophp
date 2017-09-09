@@ -3,8 +3,8 @@
 /**
 * 
 */
+use DojoPHP\CalculadorasDeIdade\MyCalculadora;
 use PHPUnit\Framework\TestCase as PHPUnit;
-use DojoPHP\MyCalculadora;
 
 class MyCalculadoraTest extends PHPUnit
 {
