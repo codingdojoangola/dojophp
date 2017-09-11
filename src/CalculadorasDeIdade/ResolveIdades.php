@@ -5,7 +5,7 @@ namespace DojoPHP\CalculadorasDeIdade;
 use DateTime;
 
 /**
- * Class ResolveIdades
+ * Class ResolveIdades.
  *
  * Calcula idades
  *
@@ -23,19 +23,17 @@ use DateTime;
  * @see www.hackingwithphp.com/4/6/1/rounding
  *
  * @author Eleandro Duzentos <eleandro@inbox.ru|github:e200>
- *
- * @package DojoPHP
  */
 class ResolveIdades
 {
     /**
-     * Calcula usando uma data
+     * Calcula usando uma data.
      *
      * @param $dataDeNascimento
      *
      * @return int
      */
-    function comData($dataDeNascimento)
+    public function comData($dataDeNascimento)
     {
         $tempoUnix = (new DateTime($dataDeNascimento))->getTimestamp();
         $tempoAgora = time();
