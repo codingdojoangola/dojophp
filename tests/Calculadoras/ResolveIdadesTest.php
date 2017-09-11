@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ResolveIdadesTest extends TestCase
 {
-    function testResolve()
+    public function testResolve()
     {
         $dataDeNascimento = '08/29/1989';
         $idadeEsperada = 28;
