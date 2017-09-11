@@ -15,10 +15,8 @@ class Users {
     public function getAllUsers(){
        $obj  = new API();
         $this->obj = $obj->get("https://api.github.com/search/users?q=location:Angola");
-                   // var_dump($this->obj);
                 foreach ($this->obj as $key => $value) {
                    $this->data = $value;
-
                 }
                 return $this->data;
     }
