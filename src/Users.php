@@ -2,7 +2,6 @@
 
 namespace DojoPHP;
 
-require 'API.php';
 class Users {
 
     private $data;

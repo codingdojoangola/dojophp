@@ -1,31 +1,15 @@
 <?php
 
-require 'src/Users.php';
+/*
+* @autor Marcio Zebedeu
+*/
 
-$obj = new \DojoPHP\Users();
-$array =  $obj->getAllUsers();
 
+// require obrigatorio para pegar todas as classes automaticamente
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>User | GITHUB</title>
-</head>
-<body>
+require 'vendor/autoload.php';
 
-    <div>
-    <?php 
-foreach ($array as $key => $value) { ?>
-   
-<h1><?php echo $value->login; ?></h1><br>
-<img src="<?php echo $value->avatar_url; ?>">
-    		
-    	<?php }
-?>
-	
-    </div>
+// require do App/index.php
 
-</body>
-</html>
+require 'App/index.php';
+

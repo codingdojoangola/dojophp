@@ -2,7 +2,6 @@
 
 namespace DojoPHP;
 
-require 'interfaceApi.php';
 
 class API implements interfaceApi
 {
