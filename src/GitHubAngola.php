@@ -9,6 +9,18 @@ class GitHubAngola
 {
 
 
+
+    function getCurlVal(){
+
+        $curl_init=curl_init();
+        $url="curl -u guimar86:540bdd5a9a1d676d7e4ca4b082aaf62d12fcc8ee https://api.github.com/search/users?q=location:Luanda/Angola";
+        curl_setopt($curl_init,CURLOPT_URL,$url);
+        curl_setopt($curl_init,CURLOPT_RETURNTRANSFER,$url);
+
+        $result=curl_exec($curl_init);
+
+
+    }
     /**
      * Função usada para ler o endpoint do gitHub
      * e obter todos utilizadores em Angola
@@ -19,6 +31,7 @@ class GitHubAngola
     {
 
         $toReturn = array();
+        //$github_url=curl -u guimar86:540bdd5a9a1d676d7e4ca4b082aaf62d12fcc8ee https://api.github.com/search/users?q=location:Luanda/Angola
         $github_url = 'https://api.github.com/search/users?q=location:Luanda/Angola';
         $github_json = file_get_contents($github_url);
         $github_array = json_decode($github_json, true);
