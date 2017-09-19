@@ -23,14 +23,14 @@ class ColecaoDeLuandansesNoGithub
          * Informações de cabeçalho para a requisição que
          * vamos fazer ao Github API.
          */
-        $header = [
-            'http' => [
+        $header = array(
+            'http' => array(
                 'method' => 'GET',
-                'header' => [
+                'header' => array(
                         'User-Agent: PHP',
-                    ],
-                ],
-            ];
+                    ),
+                ),
+            );
 
         /*
          * O Github API precisa saber quem está a pedir as informações,
