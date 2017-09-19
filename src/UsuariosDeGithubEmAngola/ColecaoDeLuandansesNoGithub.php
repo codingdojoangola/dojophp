@@ -17,7 +17,7 @@ class ColecaoDeLuandansesNoGithub
      *
      * @return array
      */
-    public function obter()
+    function obter()
     {
         /*
          * Informações de cabeçalho para a requisição que
@@ -27,9 +27,9 @@ class ColecaoDeLuandansesNoGithub
             'http' => [
                 'method' => 'GET',
                 'header' => [
-                        'User-Agent: PHP',
-                    ],
-                ],
+                        'User-Agent: PHP'
+                    ]
+                ]
             ];
 
         /*
@@ -56,6 +56,6 @@ class ColecaoDeLuandansesNoGithub
          * Por padrão, o json_decode() retorna um objecto do tipo sdtClass,
          * mas como é mais comum trabalhar-se com array, fiz a conversão.
          */
-        return (array) json_decode($githubUsers);
+        return (array)json_decode($githubUsers);
     }
 }
