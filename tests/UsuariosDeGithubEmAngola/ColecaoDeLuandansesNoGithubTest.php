@@ -1,7 +1,7 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use DojoPHP\UsuariosDeGithubEmAngola\ColecaoDeLuandansesNoGithub;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author Eleandro Duzentos <eleandro@inbox.ru>
@@ -10,9 +10,9 @@ use DojoPHP\UsuariosDeGithubEmAngola\ColecaoDeLuandansesNoGithub;
  */
 class ColecaoDeLuandansesNoGithubTest extends TestCase
 {
-    function testObter()
+    public function testObter()
     {
-        $utilizadoresEncontrados = (new ColecaoDeLuandansesNoGithub)->obter();
+        $utilizadoresEncontrados = (new ColecaoDeLuandansesNoGithub())->obter();
 
         $this->assertNotEmpty($utilizadoresEncontrados);
         $this->assertInternalType('array', $utilizadoresEncontrados);
