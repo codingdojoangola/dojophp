@@ -1,6 +1,6 @@
 <?php
 	
-	use dojophp\returnUsersGithub\githubApi;
+	use DojoPHP\returnUsersGithub\githubApi;
 	use PHPUnit\Framework\TestCase as PHPUnit;
 
 class githubTest extends PHPUnit
