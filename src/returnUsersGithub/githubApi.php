@@ -1,5 +1,5 @@
 <?php
-	namespace dojophp\returnUsersGithub;
+	namespace DojoPHP\ReturnUsersGithub;
 	/**
 	* @author: Acidiney Dias
 	* @description: Return users residing in Angola
@@ -9,7 +9,7 @@
 	* @method: get
 	*/
 
-	class githubApi
+	class GithubApi
 	{
 		public $location;
 		public $users_json;
