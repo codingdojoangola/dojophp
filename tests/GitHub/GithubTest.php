@@ -13,6 +13,6 @@ class GithubTest extends PHPUnit
 	{
 		$this->search 	= "Luanda";
 		$this->git1	= new GithubApi($this->search);
-		return $this->git1->get_users();
+	  	$this->assertInternalType('array', $this->git1->get_users());
 	}
 }
