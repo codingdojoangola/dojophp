@@ -43,7 +43,7 @@ class GithubApi
 			$this->users_json = curl_exec($this->ch);
 
 			curl_close($this->ch);
-			return json_decode($this->users_json);
+			return (array) json_decode($this->users_json);
 		} catch (Exception $e) 
 		{
 			echo json_encode($e);
