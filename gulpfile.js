@@ -19,16 +19,17 @@
 
 /**
  * Tarefas aki implementadas:
- *      1. Live reloads browser with syncB.
- *      2. CSS: Sass to CSS conversion, error catching, Auto-prefixing, Sourcemaps,
- *         CSS minification, and Merge Media Queries.
- *      3. JS: Concatenates & uglifies Vendor and Custom JS files.
- *      4. Images: Minifies PNG, JPEG, GIF and SVG images.
- *      5. Watches files for changes in HTML, PHP, CSS & JS.
- *      6. InjectCSS instead of browser page reload.
+ *
+ *      1. Recarrega o navegador com browser-sync.
+ *      2. Injeção dos pacotes Bower.
+ *      2. Conversão Sass para CSS, prefixação automática e Minualização.
+ *      3. Concatena e uglifica (min) os arquivos JS.
+ *      4. Comprimir as imagens PNG, JPEG, GIF e SVG.
+ *      2. Automatização do PHPUnit para teste.
+ *      5. Relata mudanças no ficheiros HTML, PHP, CSS e JS.
+ *      6. InjectCSS em vez de recarregar a página do navegador.
  *
  * Futura implementações:
- *      *. Corrects the line endings. (futura implementação )
  *      *. Automatização com Travis CI
  *      *. Mode de Desenvolvimento e Produção
  *
@@ -238,14 +239,6 @@ gulp.task('injector-bower', function() {
         .pipe(gulp.dest(Projecto.destino));
 });
 
-// TODO: testes
-// Tarefa PHPUnit (teste automático)
-gulp.task('phpunit', function() {
-    exec('phpunit', function(error, fora) {
-        sys.puts(fora)
-    })
-});
-
 // Tarefa de Estilos
 gulp.task('estilos', function() {
     gulp.src(ficheiros_da_App.estilos)
@@ -297,6 +290,14 @@ gulp.task('imagens', function() {
             message: 'Tarefa de: "IMAGENS" Completo!',
             onLast: true
         }));
+});
+
+// TODO: Testes
+// Tarefa PHPUnit (teste automático)
+gulp.task('phpunit', function() {
+    exec('phpunit', function(error, fora) {
+        sys.puts(fora)
+    })
 });
 
 // Tarefa do Vigia
