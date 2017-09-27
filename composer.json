@@ -1,0 +1,23 @@
+{
+    "name": "CDA/dojophp",
+    "description": "Desafios PHP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [{
+        "name": "José Cage",
+        "email": "josejanuario7@gmail.com"
+    }],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "DojoPHP\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "nesbot/carbon": "^1.22"
+    }
+}
