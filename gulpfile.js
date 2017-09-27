@@ -308,22 +308,22 @@ gulp.task('vigia', ['bower', 'estilos', 'scripts', 'imagens', 'sync_na_tela'], f
         ver_uEvento(artista);
     });
 
-    // // Reload on SCSS file changes.
+    // Injectar bower em cada mudança.
     gulp.watch(Projecto.bower.json, ['injector-bower']).on('change', function(artista) {
         ver_uEvento(artista);
     });
 
-    // // Reload on SCSS file changes.
+    // Recarregar a cada mudança dos ficheiros SCSS.
     gulp.watch(ficheiros_da_App.estilos, ['estilos']).on('change', function(artista) {
         ver_uEvento(artista);
     });
 
-    // // Reload on customJS file changes.
+    // Recarregar a cada mudança dos ficheiros JS.
     gulp.watch(ficheiros_da_App.scripts.origem, ['scripts']).on('change', recarregar, function(artista) {
         ver_uEvento(artista);
     });
 
-    // // Watch image files './i/raw/**/*'
+    // Vigiando a pasta de imagens ex:'./img/raw/**/*'
     gulp.watch(ficheiros_da_App.images, ['imagens']).on('change', recarregar, function(artista) {
         ver_uEvento(artista);
     });
