@@ -1,0 +1,42 @@
+{
+    "name": "dojophp",
+    "version": "0.0.1",
+    "description": "DojoPHP - Kit Inicial para Projectos Web ( Inventa, Inova e Partilha! )",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codingdojoangola/dojophp.git"
+    },
+    "keywords": [
+        "dojophp",
+        "opensource",
+        "angola"
+    ],
+    "author": "shi-hashirim <andre.saa333@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/codingdojoangola/dojophp/issues"
+    },
+    "homepage": "https://github.com/codingdojoangola/dojophp#readme",
+    "dependencies": {
+        "gulp": "^3.9.1"
+    },
+    "devDependencies": {
+        "bower": "^1.8.2",
+        "browser-sync": "^2.18.13",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.0.0",
+        "gulp-bower": "0.0.13",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^3.3.0",
+        "gulp-notify": "^3.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "^3.0.0",
+        "gulp-util": "^3.0.8",
+        "wiredep": "^4.0.0"
+    }
+}

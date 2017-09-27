@@ -4,6 +4,10 @@ php:
   - 7.0
   - 7.1
 
+env:
+  - PHP_ENV="desenvolvimento"
+  - PHP_ENV="producao";SESSION_SECRET="la li"
+
 addons:
     code_climate:
         repo_token: $CODECLIMATE_API_TOKEN
@@ -15,13 +19,18 @@ cache:
 sudo: false
 dist: trusty
 
+# services:
+#   - mangodb
+
 install: composer install
 
 before_script:
-  - travis_retry composer self-update 
+  - travis_retry composer self-update
   - composer require codeclimate/php-test-reporter --dev
 
 script:
+  - phpunit --configuration phpunit.xml coverage-text
+  - gulp travis
   - vendor/bin/phpunit --debug
 
 #after_success:
