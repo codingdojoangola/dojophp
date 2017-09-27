@@ -19,8 +19,8 @@ cache:
 sudo: false
 dist: trusty
 
-services:
-  - mangodb
+# services:
+#   - mangodb
 
 install: composer install
 

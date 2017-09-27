@@ -185,8 +185,10 @@ const PREFIXO_DOS_BROWSERS = [
 //     this.emit('end');
 // }
 
-// Tarefas de Dsenvolvimento
-// ---------------------------------------------------------------------------
+//###################################################################
+// TAREFAS DE DESENVOLVIMENTOS
+// ##################################################################
+
 // Tarefas do Travis
 // TODO: Implementação e automatização do Travis CI
 // Start a Travis webserver.
@@ -236,7 +238,8 @@ gulp.task('injector-bower', function() {
         .pipe(gulp.dest(Projecto.destino));
 });
 
-// Bower gerenciador de pacotes
+// TODO: testes
+// Tarefa PHPUnit (teste automático)
 gulp.task('phpunit', function() {
     exec('phpunit', function(error, fora) {
         sys.puts(fora)
@@ -331,7 +334,7 @@ gulp.task('vigia', ['bower', 'estilos', 'scripts', 'imagens', 'sync_na_tela'], f
 });
 
 // Tarefas do Pai Grande (padrão)
-gulp.task('default', ['estilos', 'scripts', 'imagens', 'sync_na_tela'], function() {
+gulp.task('default', ['phpunit', 'estilos', 'scripts', 'imagens', 'sync_na_tela'], function() {
     gulp.src(caminho_d.scripts.destino + 'main.js')
         .pipe(nota({
             message: 'Compilação dos Assets com Sucesso.'

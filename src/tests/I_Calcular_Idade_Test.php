@@ -1,6 +1,7 @@
 <?php
-use DojoPHP\src\Calcular_Idade as Ver_Idade;
+use DojoPHP\tests as Ver_Idade;
 // use PHPUnit\Framework\TestCase as Dojo;
+
 	/**
     * Nome       : Idade.
     * Descripção : Calcular a Idade baseado na data inserida.

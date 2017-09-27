@@ -1,6 +1,5 @@
 <?php
-
-namespace DojoPHP\Desafios;
+use DojoPHP\tests as Usuarios_Git;
 
 	/**
     * Nome       : Buscar Usuários GitHub  por Localização.
@@ -10,7 +9,7 @@ namespace DojoPHP\Desafios;
     * @Author    : Shir Hashirim
     */
 
-class Usuarios_Git_porLocalizacao {
+class Usuarios_Git_porLocalizacao_Test {
 	/**
     * Returna uma Lista de Usuários.
     *
@@ -20,19 +19,16 @@ class Usuarios_Git_porLocalizacao {
     */
 	public function pegar_usuarios_git ( $de_onde = 'Luanda,Angola' )	{
 
-        if ( !empty( $de_onde ) )
-            user_error("Falta a localizacao da busca.", E_USER_ERROR);
+        // Inicialização das variáveis
+        $onde = 'Luanda,Angola';
 
         // simples forma em pegar os utilizadores pelo Github API
-        $usuarios = file_get_contents(
-            'https://api.github.com/search/users?q=location:' . $de_onde );
+        $usuarios = Usuarios_Git::pegar_usuarios_git( $onde );
 
-        // passar pra um json
-        $usuarios = json_decode($usuarios);
         // tentar um simples print perceptivel
         print_r($usuarios);
 
-        return ($usuarios);
 	}
 }
+
 

@@ -1,46 +1,42 @@
 {
-  "name": "codingdojoangola",
-  "version": "1.0.0",
-  "description": "LandingPage do Coding dojo Angola",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codingdojoangola/landing-page.git"
-  },
-  "keywords": [
-    "dojophp",
-    "opensource",
-    "africa"
-  ],
-  "author": "José Cage <josejanuario7@gmail.com> (https://josecage.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codingdojoangola/landing-page/issues"
-  },
-  "homepage": "https://github.com/codingdojoangola/landing-page#readme",
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
-  "devDependencies": {
-    "bower": "^1.8.2",
-    "browser-sync": "^2.18.13",
-    "child_process": "^1.0.2",
-    "fs": "0.0.1-security",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-bower": "0.0.13",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^3.3.0",
-    "gulp-notify": "^3.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "path": "^0.12.7",
-    "sys": "0.0.1",
-    "wiredep": "^4.0.0"
-  }
+    "name": "dojophp",
+    "version": "0.0.1",
+    "description": "LandingPage do Coding dojo Angola",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codingdojoangola/landing-page.git"
+    },
+    "keywords": [
+        "dojophp",
+        "opensource",
+        "africa"
+    ],
+    "author": "José Cage <josejanuario7@gmail.com> (https://josecage.com)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/codingdojoangola/landing-page/issues"
+    },
+    "homepage": "https://github.com/codingdojoangola/landing-page#readme",
+    "dependencies": {
+        "gulp": "^3.9.1"
+    },
+    "devDependencies": {
+        "bower": "^1.8.2",
+        "browser-sync": "^2.18.13",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.0.0",
+        "gulp-bower": "0.0.13",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^3.3.0",
+        "gulp-notify": "^3.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "^3.0.0",
+        "gulp-util": "^3.0.8",
+        "wiredep": "^4.0.0"
+    }
 }
