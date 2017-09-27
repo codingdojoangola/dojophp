@@ -1,26 +1,26 @@
 {
     "name": "dojophp",
     "version": "0.0.1",
-    "description": "LandingPage do Coding dojo Angola",
+    "description": "DojoPHP - Kit Inicial para Projectos Web ( Inventa, Inova e Partilha! )",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/codingdojoangola/landing-page.git"
+        "url": "git+https://github.com/codingdojoangola/dojophp.git"
     },
     "keywords": [
         "dojophp",
         "opensource",
-        "africa"
+        "angola"
     ],
-    "author": "José Cage <josejanuario7@gmail.com> (https://josecage.com)",
+    "author": "shi-hashirim <andre.saa333@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/codingdojoangola/landing-page/issues"
+        "url": "https://github.com/codingdojoangola/dojophp/issues"
     },
-    "homepage": "https://github.com/codingdojoangola/landing-page#readme",
+    "homepage": "https://github.com/codingdojoangola/dojophp#readme",
     "dependencies": {
         "gulp": "^3.9.1"
     },

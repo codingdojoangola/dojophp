@@ -1,21 +1,21 @@
 {
-  "name": "dojophp",
-  "authors": [
-    "shi-hashirim <andre.saa333@gmail.com>"
-  ],
-  "description": "Kit Inicial para Projectos Web ( Inventa, Inova Algo! )",
-  "main": "index.html",
-  "keywords": [
-    "deborla"
-  ],
-  "license": "MIT",
-  "homepage": "https://github.com/shir-hashirim/dojophp",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "app/libs",
-    "test",
-    "tests"
-  ]
+    "name": "dojophp",
+    "authors": [
+        "shi-hashirim <andre.saa333@gmail.com>"
+    ],
+    "description": "DojoPHP - Kit Inicial para Projectos Web ( Inventa, Inova e Partilha! )",
+    "main": "index.html",
+    "keywords": [
+        "deborla"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/shir-hashirim/dojophp",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "app/libs",
+        "test",
+        "tests"
+    ]
 }
