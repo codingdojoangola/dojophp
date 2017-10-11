@@ -1,9 +1,25 @@
 <?php
-namespace DojoPHP\ReturnUsersGithub;
-require("GithubApi.php");
-$new = new GithubApi($_POST['cidade']);
-$items = $new->get_users();
+
+namespace DojoPHP\ReturnUsersGithub;// Para conseguir usar o Arquivo da API precisei meter no mesmo namespace
+require("GithubApi.php"); 
+/**
+* @author: Acidiney Dias
+* @description: Esse controler faz a conexão entre a view e a API
+* @post: cidade
+* @git: CodingDojo/dojophp
+* @return: json
+* @method: get
+*/
+
+$new = new GithubApi($_POST['cidade']); // Instaciando Classe GithubAPI
+
+$items = $new->get_users(); // Esse metodo trara todos usuarios do github passados pelo metodo post
 $elements = $items['items'];
+/*
+	A principio estava com o problema  de fazer o foreach nos elementos que foram tragos pela API, 
+	ai surge a necessidade da criação da variavel elements, Por Padrão o GitHub não retorna um Array... O que o Github retorna é uma matriz[][] por isso tive que dizer ao php que eu quero todos elementos do primeiro array ou seja os elementos que estão dentro do array items.Só depois de fazer isso consegui realmente o que é o objectivo... Conforme mostra o resto do codigo
+*/
+
 $user = '';
 
 foreach ($elements as $key) {
