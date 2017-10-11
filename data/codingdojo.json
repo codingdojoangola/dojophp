@@ -1,0 +1,17 @@
+{
+  "app": "Coding Dojo Angola",
+  "url": "http://codingdojoangola.com",
+  "email": "info@codingdojoangola",
+  "membros": [
+    {
+      "nome": "Lucius Curado",
+      "cargo": "Moderador e Organizador",
+      "avatar": ""
+    },
+    {
+      "nome": "José Cage",
+      "cargo": "Moderador e instrutor",
+      "avatar": ""
+    }
+  ]
+}
