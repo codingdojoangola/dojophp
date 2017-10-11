@@ -18,17 +18,18 @@ class GithubApi
 	Public $url;
 	public $userAgent;
 
-	public function __construct($location)
+	public function __construct()
 	{
-		$this->location = $location;
 		$this->userAgent 	= "User-Agent: PHP";
 		$this->return_json 	= array();
 		$this->url    	   	= 'https://api.github.com/search/users?q=location:';
 		$this->ch			= curl_init();
 	}
 
-	public function get_users()
+	public function get_users($location)
 	{
+				$this->location 	= $location;
+
 		try{
 			
 			/*Este bloco de codigo verifica se existe Angola no parametro, pra não haver redundância*/
