@@ -14,8 +14,8 @@
 				<input data-ng-model="cidade" id="cidade" class="form-control" type="text" max-lenght="20" placeholder="Cidade" />
 				<button id="" onclick="search();" class="btn btn-primary btn-md">Pesquisar</button>
 			</div>
-			<div class="panel-body" id="resultado">
-				
+			<div class="panel-body" >
+				<p id="resultado"></p>
 			</div>
 		</div>
 	</div>
@@ -29,11 +29,15 @@
 		function search() {
 				var cidade = $('#cidade').val();
 				$.ajax({
-	        			url:"controller.php",
+	        			url:"http://localhost/dojophp/src/ReturnUsersGithub/controller.php",
 	        			type:"POST",
 	        			data:{'cidade': cidade},
 	        			dataType: 'json',
 						success: function(data){
+							$('#resultado').html(JSON.stringify(data));
+						},
+						error:function(data)
+						{
 							$('#resultado').html(data);
 						}
 	        		});
