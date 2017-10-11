@@ -38,3 +38,5 @@ require 'GithubApi.php';
                         </h1>
                     </div>
             </div>';
+ }
+ echo json_encode($user);
