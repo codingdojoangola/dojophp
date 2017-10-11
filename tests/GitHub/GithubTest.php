@@ -1,9 +1,9 @@
 <?php
 	
 use DojoPHP\ReturnUsersGithub\GithubApi;
-use PHPUnit\Framework\TestCase as PHPUnit;
+use PHPUnit\Framework\TestCase;
 
-class GithubTest extends PHPUnit
+class GithubTest extends TestCase
 {
 
 	public $search;

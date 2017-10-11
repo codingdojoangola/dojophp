@@ -32,8 +32,10 @@ class GithubApi
 		try{
 			
 			/*Este bloco de codigo verifica se existe Angola no parametro, pra não haver redundância*/
-			if(strpos($this->location, "Angola")): 	$this->url = $this->url.$this->location."/Angola";
-			else:									$this->url = $this->url.$this->location;
+			if(strpos($this->location, "Angola")): 	
+				$this->url = $this->url.$this->location."/Angola";
+			else:									
+				$this->url = $this->url.$this->location;
 			endif;
 
 			curl_setopt($this->ch, CURLOPT_URL, $this->url);	
@@ -42,11 +44,12 @@ class GithubApi
 			curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
 			$this->users_json = curl_exec($this->ch);
 
-			curl_close($this->ch);
-			return (array) json_decode($this->users_json);
+			
+			return json_decode($this->users_json, true);
 		} catch (Exception $e) 
 		{
 			echo json_encode($e);
 		}
+		curl_close($this->ch);
 	}
 }
