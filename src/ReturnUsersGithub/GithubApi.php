@@ -10,8 +10,8 @@ namespace DojoPHP\ReturnUsersGithub;
  * @return: json
  * @method: get
  */
- class GithubApi
- {
+class GithubApi
+{
 
     public $location;
     public $users_json;
@@ -34,23 +34,23 @@ namespace DojoPHP\ReturnUsersGithub;
         try {
   
             /*Este bloco de codigo verifica se existe Angola no parametro, pra não haver redundância*/
-            if (strpos($this->location, 'Angola')):
+            if (strpos($this->location, 'Angola')) :
                 $this->url = $this->url.$this->location.'/Angola'; else:
-                $this->url = $this->url.$this->location;
-            endif;
+                    $this->url = $this->url.$this->location;
+                endif;
   
 
-            curl_setopt($this->ch, CURLOPT_URL, $this->url);
-            curl_setopt($this->ch, CURLOPT_USERAGENT, $this->userAgent);
-            curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
-            $this->users_json = curl_exec($this->ch);
+                curl_setopt($this->ch, CURLOPT_URL, $this->url);
+                curl_setopt($this->ch, CURLOPT_USERAGENT, $this->userAgent);
+                curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, false);
+                curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
+                $this->users_json = curl_exec($this->ch);
   
 
-            return json_decode($this->users_json, true);
+                return json_decode($this->users_json, true);
         } catch (Exception $e) {
             echo json_encode($e);
         }
         curl_close($this->ch);
     }
- }
+}

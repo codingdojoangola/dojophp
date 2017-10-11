@@ -61,7 +61,7 @@
 		function search() {
 				var cidade = $('#cidade').val();
 				$.ajax({
-	        			url:"http://localhost/dojophp/src/ReturnUsersGithub/controller.php",
+	        			url:"../../src/ReturnUsersGithub/controller.php",
 	        			type:"POST",
 	        			data:{'cidade': cidade},
 	        			dataType: 'json',

@@ -23,7 +23,7 @@ require 'GithubApi.php';
   
  $user = '';
   
- foreach ($elements as $key) {
+foreach ($elements as $key) {
     $user .= '<div class="user-card">
                 <div class="card-image">
                     <figure class="image is4by3">
@@ -38,5 +38,5 @@ require 'GithubApi.php';
                         </h1>
                     </div>
             </div>';
- }
+}
  echo json_encode($user);
