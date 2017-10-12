@@ -16,5 +16,4 @@ class GithubTest extends TestCase
         $this->assertInternalType('array', $this->git1->get_users());
         $this->assertArrayHasKey('items', $this->git1->get_users());
     }
-
 }
