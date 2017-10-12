@@ -23,25 +23,25 @@ use DojoPHP\DiasDaSemana\DiasDaSemanaAPI;
  $dia = $new->RetornaDiaDaSemana();
 
  switch ($dia) {
-   case "Monday": $dia = 'Segunda-feira';
+   case 'Monday': $dia = 'Segunda-feira';
      break;
-    case "Tuesday": $dia = 'Terça-feira';
+    case 'Tuesday': $dia = 'Terça-feira';
      break; 
-    case "Wednesday": $dia = 'Quarta-feira';
+    case 'Wednesday': $dia = 'Quarta-feira';
      break;
-    case "Thursday": $dia = 'Quinta-feira';
+    case 'Thursday': $dia = 'Quinta-feira';
      break; 
-    case "Friday": $dia = 'Sexta-feira';
+    case 'Friday': $dia = 'Sexta-feira';
      break;
-    case "Satarday": $dia = 'Sábado';
+    case 'Satarday': $dia = 'Sábado';
      break;
-    case "Sunday": $dia = 'Domingo';
+    case 'Sunday': $dia = 'Domingo';
      break;
    default:
         $dia = 'Tente denovo';
      break;
  }
  // Esse metodo trara todos usuarios do github passados pelo metodo post
- $elements = "<p> A data passada equivale a <b class='text-info'>".$dia."</b></p>";
+ $elements = "<p> A data passada equivale a <b class='text-info'>".$dia.'</b></p>';
 
  echo json_encode($elements);
