@@ -3,14 +3,14 @@
 // Para invocar a classe GithubApi usando o "use" do autoload precisa
 // fazer o require do ficheiro vendor/autoload.php
 // Ass: JoséCage
-require("../../vendor/autoload.php");
+require '../../vendor/autoload.php';
 
 // Uma vez que já podemos usar o autoload aqui então invocamos a classe GithubApi
 // Que está em /src/ReturnUsersGithub\GithubApi.php
 
 use DojoPHP\ReturnUsersGithub\GithubApi;
 
- /**
+/**
   * @author: Acidiney Dias
   * @description: Esse controler faz a conexão entre a view e a API
   * @post: cidade
