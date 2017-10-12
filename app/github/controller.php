@@ -1,9 +1,15 @@
 <?php
 
-namespace DojoPHP\ReturnUsersGithub;
+// Para invocar a classe GithubApi usando o "use" do autoload precisa
+// fazer o require do ficheiro vendor/autoload.php
+// Ass: JoséCage
+require("../../vendor/autoload.php");
 
-// Para conseguir usar o Arquivo da API precisei meter no mesmo namespace
-require 'GithubApi.php';
+// Uma vez que já podemos usar o autoload aqui então invocamos a classe GithubApi
+// Que está em /src/ReturnUsersGithub\GithubApi.php
+
+use DojoPHP\ReturnUsersGithub\GithubApi;
+
  /**
   * @author: Acidiney Dias
   * @description: Esse controler faz a conexão entre a view e a API
@@ -32,7 +38,7 @@ foreach ($elements as $key) {
                            <img src="'.$key['avatar_url'].'" alt="'.$key['login'].'" class="center-block img-circle">
                             </a>
                     </figure>
-                </div> 
+                </div>
                     <div class="card-content">
                         <h1 class="title is-4">
                        <a href="'.$key['html_url'].'">'.$key['login'].'</a>

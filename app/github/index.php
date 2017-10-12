@@ -33,12 +33,12 @@
 		    font-weight: 300;
 		    line-height: 1.125;
 		}
-	
+
 
 	</style>
 </head>
-<body data-ng-app="Github"> 
-	<div class="container">	
+<body data-ng-app="Github">
+	<div class="container">
 		<div class="panel">
 			<div class="panel-head">
 				<h1>Retornando Usuarios de {{cidade}}</h1>
@@ -56,12 +56,12 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<h4 class="text-center" style="color: #ccc">Criado Por Acidiney Dias</h4>
 	<script type="text/javascript">
-		angular.module('Github', []);	
+		angular.module('Github', []);
 
 		function search() {
 				var cidade = $('#cidade').val();
 				$.ajax({
-	        			url:"../../src/ReturnUsersGithub/controller.php",
+	        			url:"controller.php",
 	        			type:"POST",
 	        			data:{'cidade': cidade},
 	        			dataType: 'json',
