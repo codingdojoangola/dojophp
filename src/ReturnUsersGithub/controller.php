@@ -13,8 +13,10 @@ require 'GithubApi.php';
   * @method: get
   */
  // Instaciando Classe GithubAPI
+ 
  $new = new GithubApi($_POST['cidade']); 
  // Esse metodo trara todos usuarios do github passados pelo metodo post
+
  $items = $new->get_users(); 
  $elements = $items['items'];
  /*
