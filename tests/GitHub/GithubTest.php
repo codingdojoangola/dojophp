@@ -14,7 +14,7 @@ class GithubTest extends TestCase
         $this->search = 'Luanda';
         $this->git1 = new GithubApi($this->search);
         $this->assertNotEmpty($this->git1->get_users());
-          $this->assertInternalType('array', $this->git1->get_users());
-         $this->assertArrayHasKey('items', $this->git1->get_users());
-     }
+        $this->assertInternalType('array', $this->git1->get_users());
+        $this->assertArrayHasKey('items', $this->git1->get_users());
+    }
 }
