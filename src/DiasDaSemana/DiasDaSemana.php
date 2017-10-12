@@ -27,7 +27,7 @@ class DiasDaSemana
                     4 => 'Wednesday',
                     5 => 'Thursday',
                     6 => 'Friday',
-                    7 => 'Saturday'
+                    7 => 'Saturday',
                 ];
             default:
                 return [
@@ -37,7 +37,7 @@ class DiasDaSemana
                     4 => 'Quarta',
                     5 => 'Quinta',
                     6 => 'Sexta',
-                    7 => 'Sábado'
+                    7 => 'Sábado',
                 ];
                 break;
         }

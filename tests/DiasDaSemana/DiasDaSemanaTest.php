@@ -1,7 +1,7 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use DojoPHP\DiasDaSemana\DiasDaSemana;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author Eleandro Duzentos <eleandro@inbox.ru>
@@ -74,14 +74,14 @@ class DiasDaSemanaTest extends TestCase
             4 => 'Wednesday',
             5 => 'Thursday',
             6 => 'Friday',
-            7 => 'Saturday'
+            7 => 'Saturday',
         ];
 
         $diaDaSemanaHoje = date('w', time());
 
         // Obtem o dia actual em Inglês
         $dia = $this->diaDaSemana->obterDiaActual('en');
-        
+
         $this->assertEquals($diasDaSemanaEn[$diaDaSemanaHoje], $dia);
     }
 }
