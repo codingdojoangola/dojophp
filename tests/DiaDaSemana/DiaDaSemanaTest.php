@@ -16,7 +16,7 @@ class DiaDaSemanaTest extends TestCase
 
     public function testRetornaDoMetodo()
     {
-        $this->data = '12/07/2017';
+        $this->data = date('Y/m/d');
 
         $this->instancia = new DiasDaSemanaAPI($this->data);
         $this->diaPorExtenso = $this->instancia->RetornaDiaDaSemana();
