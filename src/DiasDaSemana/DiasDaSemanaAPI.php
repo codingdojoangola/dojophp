@@ -37,5 +37,6 @@ class DiasDaSemanaAPI
         $this->diaDaSemana = date('l', strtotime($this->data));
 
         return $this->diaDaSemana;
+
 	}
 }
