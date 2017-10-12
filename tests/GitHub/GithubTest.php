@@ -1,4 +1,4 @@
-<?php  
+<?php
 
  use DojoPHP\ReturnUsersGithub\GithubApi;
  use PHPUnit\Framework\TestCase;
@@ -7,7 +7,7 @@
  {
      public $search;
      public $git1;
-  
+
      public function testGithubUserAngola()
      {
          $this->search = 'Luanda';
@@ -16,4 +16,4 @@
          $this->assertInternalType('array', $this->git1->get_users());
          $this->assertArrayHasKey('items', $this->git1->get_users());
      }
-  }
+}

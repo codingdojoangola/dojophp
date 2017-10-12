@@ -22,7 +22,7 @@ require 'GithubApi.php';
  */
 
  $user = '';
- 
+
 foreach ($elements as $key) {
     $user .= '<div class="user-card">
                 <div class="card-image">
