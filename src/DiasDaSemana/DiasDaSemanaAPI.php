@@ -4,12 +4,11 @@ namespace DojoPHP\DiasDaSemana;
 
 class DiasDaSemanaAPI
 {
-	 /**
-	  *@author: Acidiney Dias
-	  *@link: https://www.github.com/acidiney
-	  *@description: Essa Classe Retorna o dia da semana conforme a data introduzida
-	  */
-
+    /**
+    *@author: Acidiney Dias
+    *@link: https://www.github.com/acidiney
+    *@description: Essa Classe Retorna o dia da semana conforme a data introduzida
+    */
 	 public $data;
 	 public $diaDaSemana;
 	 /*

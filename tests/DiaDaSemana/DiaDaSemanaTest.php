@@ -3,11 +3,11 @@
      use DojoPHP\DiasDaSemana\DiasDaSemanaAPI;
      use PHPUnit\Framework\TestCase;
 
-     /**
-      * @author: Acidiney Dias
-      * @link: https://www.github.com/acidiney
-      * @description: Classe de testes para o retorno do DiasDaSemanaAPI
-      */
+/**
+ * @author: Acidiney Dias
+ * @link: https://www.github.com/acidiney
+ * @description: Classe de testes para o retorno do DiasDaSemanaAPI
+ */
 class DiaDaSemanaTest extends TestCase
 {
     public $data;
@@ -16,7 +16,7 @@ class DiaDaSemanaTest extends TestCase
 
     public function testRetornaDoMetodo()
     {
-        $this->data = "12/07/2017";
+        $this->data = '12/07/2017';
 
         $this->instancia = new DiasDaSemanaAPI($this->data);
         $this->diaPorExtenso = $this->instancia->RetornaDiaDaSemana();
