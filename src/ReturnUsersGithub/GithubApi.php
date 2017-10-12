@@ -2,14 +2,14 @@
 
 namespace DojoPHP\ReturnUsersGithub;
 
- /**
-  * @author: Acidiney Dias
-  * @description: Return users residing in Angola
-  * @param: $location
-  * @git: CodingDojo/dojophp
-  * @return: json
-  * @method: get
-  */
+/**
+ * @author: Acidiney Dias
+ * @description: Return users residing in Angola
+ * @param: $location
+ * @git: CodingDojo/dojophp
+ * @return: json
+ * @method: get
+ */
 class GithubApi
 {
     public $location;
