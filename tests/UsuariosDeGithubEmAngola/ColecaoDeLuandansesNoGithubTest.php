@@ -12,10 +12,36 @@ class ColecaoDeLuandansesNoGithubTest extends TestCase
 {
     public function testObter()
     {
-        $utilizadoresEncontrados = (new ColecaoDeLuandansesNoGithub())->obter();
+        $cll = new ColecaoDeLuandansesNoGithub();
+
+        $utilizadoresEncontrados = $cll->obter();
 
         $this->assertNotEmpty($utilizadoresEncontrados);
         $this->assertInternalType('array', $utilizadoresEncontrados);
         $this->assertArrayHasKey('items', $utilizadoresEncontrados);
+        $this->assertCount(12, $utilizadoresEncontrados['items']);
+
+        /**
+         * Pegando alguns russos.
+         *
+         * Infelizmente não existe um `assertIsRussian()` kkk.
+         */
+        $utilizadoresEncontrados = $cll->obter('Russia,Moscow');
+
+        $this->assertNotEmpty($utilizadoresEncontrados);
+        $this->assertInternalType('array', $utilizadoresEncontrados);
+        $this->assertArrayHasKey('items', $utilizadoresEncontrados);
+        $this->assertCount(12, $utilizadoresEncontrados['items']);
+
+        /**
+         * Testando as variáveis `$pagina` e `$limite`.
+         */
+
+        $utilizadoresEncontrados = $cll->obter('Russia,Moscow', 1, 5);
+
+        $this->assertNotEmpty($utilizadoresEncontrados);
+        $this->assertInternalType('array', $utilizadoresEncontrados);
+        $this->assertArrayHasKey('items', $utilizadoresEncontrados);
+        $this->assertCount(5, $utilizadoresEncontrados['items']);
     }
 }
