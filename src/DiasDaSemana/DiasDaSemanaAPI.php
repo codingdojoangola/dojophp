@@ -3,8 +3,8 @@
 namespace DojoPHP\DiasDaSemana;
 
 class DiasDaSemanaAPI
- {
-     /**
+{
+    /**
      *@author: Acidiney Dias
      *@link: https://www.github.com/acidiney
      *@description: Essa Classe Retorna o dia da semana conforme a data introduzida
@@ -37,5 +37,5 @@ class DiasDaSemanaAPI
         $this->diaDaSemana = date('l', strtotime($this->data));
 
         return $this->diaDaSemana;
-    }
+	}
 }
