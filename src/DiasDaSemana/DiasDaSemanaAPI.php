@@ -35,8 +35,6 @@ class DiasDaSemanaAPI
         $partes = explode('/', $this->data);
         $this->data = $partes[2].'-'.$partes[1].'-'.$partes[0];
         $this->diaDaSemana = date('l', strtotime($this->data));
-
-        return $this->diaDaSemana;
-
+		return $this->diaDaSemana;
 	}
 }
