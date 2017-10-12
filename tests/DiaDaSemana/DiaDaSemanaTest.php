@@ -4,10 +4,10 @@
      use PHPUnit\Framework\TestCase;
 
      /**
- * @author: Acidiney Dias
- * @link: https://www.github.com/acidiney
- * @description: Classe de testes para o retorno do DiasDaSemanaAPI
- */
+      * @author: Acidiney Dias
+      * @link: https://www.github.com/acidiney
+      * @description: Classe de testes para o retorno do DiasDaSemanaAPI
+      */
 class DiaDaSemanaTest extends TestCase
 {
     public $data;
