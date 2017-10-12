@@ -5,6 +5,8 @@ namespace DojoPHP\DiasDaSemana;
 /**
  * @author Eleandro Duzentos <eleandro@inbox.ru>
  *
+ * Trata dos dias da semana.
+ *
  * @link https://github.com/e200
  */
 class DiasDaSemana
@@ -20,7 +22,7 @@ class DiasDaSemana
     {
         switch ($lingua) {
             case 'en':
-                return [
+                return array(
                     1 => 'Sunday',
                     2 => 'Monday',
                     3 => 'Tuesday',
@@ -28,9 +30,9 @@ class DiasDaSemana
                     5 => 'Thursday',
                     6 => 'Friday',
                     7 => 'Saturday',
-                ];
+                );
             default:
-                return [
+                return array(
                     1 => 'Domingo',
                     2 => 'Segunda',
                     3 => 'Terça',
@@ -38,7 +40,7 @@ class DiasDaSemana
                     5 => 'Quinta',
                     6 => 'Sexta',
                     7 => 'Sábado',
-                ];
+                );
                 break;
         }
     }
