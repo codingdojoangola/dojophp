@@ -12,9 +12,10 @@ require 'GithubApi.php';
   * @return: json
   * @method: get
   */
- $new = new GithubApi($_POST['cidade']); // Instaciando Classe GithubAPI
-
- $items = $new->get_users(); // Esse metodo trara todos usuarios do github passados pelo metodo post
+ // Instaciando Classe GithubAPI
+ $new = new GithubApi($_POST['cidade']); 
+ // Esse metodo trara todos usuarios do github passados pelo metodo post
+ $items = $new->get_users(); 
  $elements = $items['items'];
  /*
     A principio estava com o problema  de fazer o foreach nos elementos que foram tragos pela API,
