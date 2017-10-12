@@ -36,7 +36,6 @@ class ColecaoDeLuandansesNoGithubTest extends TestCase
         /**
          * Testando as variáveis `$pagina` e `$limite`.
          */
-
         $utilizadoresEncontrados = $cll->obter('Russia,Moscow', 1, 5);
 
         $this->assertNotEmpty($utilizadoresEncontrados);
