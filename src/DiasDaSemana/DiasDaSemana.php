@@ -22,7 +22,7 @@ class DiasDaSemana
     {
         switch ($lingua) {
             case 'en':
-                return array(
+                return [
                     1 => 'Sunday',
                     2 => 'Monday',
                     3 => 'Tuesday',
@@ -30,9 +30,9 @@ class DiasDaSemana
                     5 => 'Thursday',
                     6 => 'Friday',
                     7 => 'Saturday',
-                );
+                ];
             default:
-                return array(
+                return [
                     1 => 'Domingo',
                     2 => 'Segunda',
                     3 => 'Terça',
@@ -40,7 +40,7 @@ class DiasDaSemana
                     5 => 'Quinta',
                     6 => 'Sexta',
                     7 => 'Sábado',
-                );
+                ];
                 break;
         }
     }
