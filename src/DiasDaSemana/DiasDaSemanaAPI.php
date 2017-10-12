@@ -31,10 +31,10 @@
 			 *@uses: https://php.net/time
 			 */
 
-			$partes = explode('-',$this->data);
+			$partes = explode('/',$this->data);
 			$this->data = $partes[2]."-".$partes[1]."-".$partes[0];
 			$this->diaDaSemana = date('l',strtotime($this->data));
 
-			return json_encode($this->diaDaSemana);
+			return $this->diaDaSemana;
 		}
 	}

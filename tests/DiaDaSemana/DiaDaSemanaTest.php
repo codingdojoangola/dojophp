@@ -16,7 +16,7 @@
 
 		public function testRetornaDoMetodo()
 		{
-			$this->data = "12-07-2017";
+			$this->data = "12/07/2017";
 
 			$this->instancia = new DiasDaSemanaAPI($this->data);
 			$this->diaPorExtenso = $this->instancia->RetornaDiaDaSemana();
