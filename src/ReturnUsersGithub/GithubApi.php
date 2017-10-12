@@ -23,7 +23,7 @@ class GithubApi
     {
         $this->location = $location;
         $this->userAgent = 'User-Agent: PHP';
-        $this->return_json = [];
+        $this->return_json = array();
         $this->url = 'https://api.github.com/search/users?q=location:';
         $this->ch = curl_init();
     }
