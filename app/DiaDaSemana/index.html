@@ -18,14 +18,15 @@
 		}
 	</style>
 </head>
-<body data-ng-app="Github"> 
+<body onload="carregar();"> 
 	<div class="container">	
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3 class="panel-title">Dia da semana por Extenso</h3>
 			</div>
 			<div class="panel-body" >
-				<label for="cidade">Data: </label>
+				<h3 class="h3">Hoje é <small id="carregamento"></small></h3>
+				<label for="cidade">Outra data: </label>
 				<input  id="datepicker" class="form-control" type="text" max-lenght="20" placeholder="Introduza uma data" />
 				<button id="" onclick="search();" class="btn btn-primary btn-md">Achar o dia</button>
 			</div>
@@ -40,15 +41,34 @@
 	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<h4 class="text-center" style="color: #ccc">Criado Por Acidiney Dias</h4>
 	<script type="text/javascript">
+
 		 $( function() {
 		    $( "#datepicker" ).datepicker({dateFormat: "dd/mm/yy" });
 		  } );
+
+		 function carregar(){
+		  var now = new Date;
+		  var data = now.getDate()+"/"+[now.getMonth()+1]+"/"+now.getFullYear();
+				$.ajax({
+	        			url:"controller.php",
+	        			type:"POST",
+	        			data:{'date': data, 'opt' : 1},
+	        			dataType: 'json',
+						success: function(data){
+							$('#carregamento').html(data);
+						},
+						error:function(data)
+						{
+							$('#carregamento').html(data);
+						}
+	        		});
+				}
 		function search() {
 				var date = $('#datepicker').val();
 				$.ajax({
 	        			url:"controller.php",
 	        			type:"POST",
-	        			data:{'date': date},
+	        			data:{'date': date, 'opt' : 2},
 	        			dataType: 'json',
 						success: function(data){
 							$('#resultado').html(data);

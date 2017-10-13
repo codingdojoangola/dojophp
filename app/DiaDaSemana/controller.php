@@ -21,7 +21,7 @@ use DojoPHP\DiasDaSemana\DiasDaSemanaAPI;
  // Instaciando Classe DiasDaSemanaAPI
  $new = new DiasDaSemanaAPI($_POST['date']);
  $dia = $new->RetornaDiaDaSemana();
-
+ $opt = $_POST['opt'];
  switch ($dia) {
    case 'Monday': $dia = 'Segunda-feira';
      break;
@@ -33,7 +33,7 @@ use DojoPHP\DiasDaSemana\DiasDaSemanaAPI;
      break;
     case 'Friday': $dia = 'Sexta-feira';
      break;
-    case 'Satarday': $dia = 'Sabado';
+    case 'Saturday': $dia = 'Sábado';
      break;
     case 'Sunday': $dia = 'Domingo';
      break;
@@ -42,6 +42,11 @@ use DojoPHP\DiasDaSemana\DiasDaSemanaAPI;
      break;
  }
  // Esse metodo trara todos usuarios do github passados pelo metodo post
- $elements = "<p> A data passada equivale a <b class='text-info'>".$dia.'</b></p>';
+ if($opt != 1) {
+  $elements = "<p> A data passada equivale a <b class='text-info'>".$dia.'</b></p>';
+ }
+ else{
+  $elements = "<b class='text-info h3'>".$dia.'</b>';
+ }
 
  echo json_encode($elements);
