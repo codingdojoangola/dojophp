@@ -33,7 +33,7 @@ use DojoPHP\DiasDaSemana\DiasDaSemanaAPI;
      break;
     case 'Friday': $dia = 'Sexta-feira';
      break;
-    case 'Satarday': $dia = 'Sábado';
+    case 'Satarday': $dia = 'Sabado';
      break;
     case 'Sunday': $dia = 'Domingo';
      break;
