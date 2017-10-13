@@ -43,10 +43,9 @@ use DojoPHP\DiasDaSemana\DiasDaSemanaAPI;
  }
  // Esse metodo trara todos usuarios do github passados pelo metodo post
  if($opt != 1) {
-  $elements = "<p> A data passada equivale a <b class='text-info'>".$dia.'</b></p>';
- }
- else{
-  $elements = "<b class='text-info h3'>".$dia.'</b>';
+    $elements = "<p> A data passada equivale a <b class='text-info'>".$dia.'</b></p>';
+ }else{
+    $elements = "<b class='text-info h3'>".$dia.'</b>';
  }
 
  echo json_encode($elements);
