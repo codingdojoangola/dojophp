@@ -50,7 +50,7 @@ class ColecaoDeLuandansesNoGithub
         $context = stream_context_create($header);
 
         $githubUsers = file_get_contents(
-            'https://api.github.com/search/users?q=location:' . $localizacao . '&page=' . $pagina . '&per_page=' . $limite,
+            'https://api.github.com/search/users?q=location:'.$localizacao.'&page='.$pagina.'&per_page='.$limite,
             false,
             $context
         );
