@@ -30,7 +30,7 @@ class ColecaoDeLuandansesNoGithub
             'http' => [
                 'method' => 'GET',
                 'header' => [
-                        'User-Agent: PHP',
+                        'User-Agent: DojoPHP',
                     ],
                 ],
             ];
