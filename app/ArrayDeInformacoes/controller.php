@@ -22,7 +22,7 @@ use DojoPHP\ArrayDeInformacoes\ArrayInformationsAPI;
    $retorno['msg'] = '';
    $retorno['status'] = false;
 
-if ($_POST['email'] !== "" && $_POST['name'] !== "" && $_POST['telephone'] !== "") {
+if ($_POST['email'] !== '' && $_POST['name'] !== '' && $_POST['telephone'] !== '') {
     $new = new ArrayInformationsAPI($_POST['email'], $_POST['name'], $_POST['telephone']);
 
     $items = $new->CreateArrayWithInformation();
@@ -34,4 +34,4 @@ if ($_POST['email'] !== "" && $_POST['name'] !== "" && $_POST['telephone'] !== "
         }
     }
 }
- echo json_encode($retorno);
+echo json_encode($retorno);
