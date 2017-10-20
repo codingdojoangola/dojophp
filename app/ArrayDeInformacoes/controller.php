@@ -18,7 +18,7 @@ use DojoPHP\ArrayDeInformacoes\ArrayInformationsAPI;
  *@return: json
  *@method: get
  */
- // Instaciando Classe ArrayInformationsAPI
+ // Instaciando Classe ArrayInformationsAPI.
    $retorno['msg'] = '';
    $retorno['status'] = false;
 
@@ -34,4 +34,5 @@ if ($_POST['email'] !== '' && $_POST['name'] !== '' && $_POST['telephone'] !== '
         }
     }
 }
+
 echo json_encode($retorno);
