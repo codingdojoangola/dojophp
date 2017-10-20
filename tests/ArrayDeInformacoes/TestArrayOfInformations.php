@@ -8,7 +8,7 @@ class TestArrayOfInformations extends TestCase
     public $instance;
     public $returnTest;
 
-    public function setup()
+    public function testSetup()
     {
         $name = 'Acidiney Dias';
         $email = 'acidineydias@gmail.com';
@@ -16,7 +16,7 @@ class TestArrayOfInformations extends TestCase
         $this->instance = new ArrayInformationsAPI($email, $name, $telephone);
     }
 
-    public function Array()
+    public function testArray()
     {
         $this->assertNotEmpty($this->instance->CreateArrayWithInformation());
         $this->assertEquals(2, $this->instance->CreateArrayWithInformation());
