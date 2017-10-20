@@ -1,5 +1,5 @@
 <?php
- 
+
 use DojoPHP\ArrayDeInformacoes\ArrayInformationsAPI;
 use PHPUnit\Framework\TestCase;
 
@@ -11,7 +11,7 @@ class TestArrayOfInformations extends TestCase
     public function setup()
     {
         $name = 'Acidiney Dias';
-        $email= 'acidineydias@gmail.com';
+        $email = 'acidineydias@gmail.com';
         $telephone = 941056884;
         $this->instance = new ArrayInformationsAPI($email, $name, $telephone);
     }
