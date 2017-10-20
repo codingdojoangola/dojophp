@@ -3,10 +3,10 @@
 namespace DojoPHP\ArrayDeInformacoes;
 
 /**
- *
- *
- *
- *
+ *@author: Acidiney Dias
+ *@return array
+ *@description Converte as informacoes dadas em um array e retorna
+ *@date 20-10-2017
  */
 
 class ArrayInformationsAPI
