@@ -15,22 +15,25 @@ class ColecaoDeLuandansesNoGithub
      * Retorna uma lista contendo informações
      * sobre utilizadores do Github em Luanda, Angola.
      *
+     * @param $pagina Grupo de usuário requisitado.
+     * @param $limite Número de utilizadores que será retornado.
+     *
      * @return array
      */
-    public function obter()
+    public function obter($localizacao = 'Luanda,Angola', $pagina = 1, $limite = 12)
     {
         /*
          * Informações de cabeçalho para a requisição que
          * vamos fazer ao Github API.
          */
-        $header = array(
-            'http' => array(
+        $header = [
+            'http' => [
                 'method' => 'GET',
-                'header' => array(
-                        'User-Agent: PHP',
-                    ),
-                ),
-            );
+                'header' => [
+                        'User-Agent: DojoPHP',
+                    ],
+                ],
+            ];
 
         /*
          * O Github API precisa saber quem está a pedir as informações,
@@ -47,7 +50,7 @@ class ColecaoDeLuandansesNoGithub
         $context = stream_context_create($header);
 
         $githubUsers = file_get_contents(
-            'https://api.github.com/search/users?q=location:Luanda,Angola',
+            'https://api.github.com/search/users?q=location:'.$localizacao.'&page='.$pagina.'&per_page='.$limite,
             false,
             $context
         );
