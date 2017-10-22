@@ -14,7 +14,7 @@ use DojoPHP\ConvertJsonToArray\ConvertJsonForArrayAPI;
   */
 
  // Instaciando Classe ConvertJsonForArrayAPI passando o Caminho do arquivo codingdojo.json
- $new = new ConvertJsonForArrayAPI('http://localhost/dojophp/data/codingdojo.json');
+ $new = new ConvertJsonForArrayAPI('../../data/codingdojo.json');
  /*
   Este aquivo é um arquivo que possui  dois array, ou seja, um dentro de outro então a iteração só será no segundo pois no inicial são somentes as informações do Dojo.
   A chave do segundo array é membros.
