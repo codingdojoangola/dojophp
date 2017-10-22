@@ -17,7 +17,7 @@ class ConvertJsonForArrayTest extends TestCase
 
 	 public function testGetData()
 	 {
-		 $this->url = 'http://localhost/dojophp/data/codingdojo.json';
+		 $this->url = '..\..\data\codingdojo.json';
 		 $this->instance = new ConvertJsonForArrayAPI($this->url);
 
 		 $data = $this->instance->Itera();
