@@ -37,18 +37,18 @@ use DojoPHP\ConvertJsonToArray\ConvertJsonForArrayAPI;
       </tr>
     </tbody>
   </table>';
-  
+
   $elements['list'] = "<ul class='list-inline'>";
   // Criando elementos que serão exibidos(Membros)
    foreach ($membros as $membro) {
 
-       $img  = $membro['avatar'] ? $membro['avatar'] : 'atomix_user31.png';
+       $img = $membro['avatar'] ? $membro['avatar'] : 'atomix_user31.png';
        $elements['list'] .= '<li><div class="header">
         <img src='.$img.' title='.$membro['cargo'].'/>
       </div>
       <div class="footer">
       <h3>'.$membro['nome'].'</h4>
       </div></li>';
-    }
+   }
   $elements['list'] .= '</ul>';
  echo json_encode($elements);

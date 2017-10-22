@@ -1,7 +1,7 @@
 {
   "app": "Coding Dojo Angola",
   "url": "http://codingdojoangola.com",
-  "email": "info@codingdojoangola",
+  "email": "geral@codingdojoangola.com",
   "membros": [
     {
       "nome": "Lucius Curado",
@@ -11,6 +11,56 @@
     {
       "nome": "José Cage",
       "cargo": "Moderador e instrutor",
+      "avatar": ""
+    },
+    {
+      "nome": "Doriel Fonseca",
+      "cargo": "Instrutor #dojojavascript",
+      "avatar": ""
+    },
+    {
+      "nome": "Pedro Massango",
+      "cargo": "Desenvolvedor Java",
+      "avatar": ""
+    },
+    {
+      "nome": "Eleandro Duzentos",
+      "cargo": "Desenvolvedor PHP e .Net",
+      "avatar": ""
+    },
+    {
+      "nome": "Renato Martins",
+      "cargo": "Desenvolvedor Java e PHP",
+      "avatar": ""
+    },
+    {
+      "nome": "Victor Kiffen",
+      "cargo": "Desenvolvedor Java",
+      "avatar": ""
+    },
+    {
+      "nome": "Jetro Domingos",
+      "cargo": "Desenvolvedor Java",
+      "avatar": ""
+    },
+    {
+      "nome": "Acidiney Dias",
+      "cargo": "Desenvolvedor PHP",
+      "avatar": ""
+    },
+    {
+      "nome": "Nelson Júnior",
+      "cargo": "Desenvolvedor PHP",
+      "avatar": ""
+    },
+    {
+      "nome": "Masiry Link",
+      "cargo": "Desenvolvedor PHP",
+      "avatar": ""
+    },
+    {
+      "nome": "Aleixo Jeronimo",
+      "cargo": "",
       "avatar": ""
     }
   ]

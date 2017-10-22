@@ -1,12 +1,12 @@
 <?php
 
 namespace DojoPHP\ConvertJsonToArray;
+
 /**
  *@author Acidiney Dias
  *@description touch data of a file in json and convert in Array.
  *@default codingdojo.json
  */
-
 class ConvertJsonForArrayAPI
 {
 	 public $source;
