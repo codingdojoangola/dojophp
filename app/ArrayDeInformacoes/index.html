@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Retorna Dados No Array</title>
+	<meta charset="utf-8">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		.container
+		{
+			margin-top: 10%;
+		}
+		.user-card
+		{
+			    width: 25%;
+			    min-height: 250px;
+			    float: left;
+			    margin:0;
+			    margin-bottom: 15px;
+		}
+		.center-block
+		{
+			    max-width: 100%;
+		}
+		.card-content
+		{
+			text-align: center;
+			box-shadow: 0px 0px 0.5px rgba(0,0,0,0.95);
+		}
+		a{
+			color: #363636;
+		    font-size: 2rem;
+		    font-weight: 300;
+		    line-height: 1.125;
+		}
+	
+
+	</style>
+</head>
+<body data-ng-app="Github"> 
+	<div class="container">	
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h1>Retorna dados no Array</h1>
+			</div>
+			<div class="panel-body" >
+				<div class="col-md-6">
+					<h3>Inserção Dos Dados </h3>
+					<label for="name">Nome: </label>
+					<input id="name" class="form-control" type="text" max-lenght="20" placeholder="Nome completo" />
+
+					<label for="email">E-mail: </label>
+					<input id="email" class="form-control" type="email" max-lenght="20" placeholder="E-mail" />
+
+					<label for="telephone">Telefone: </label>
+					<input id="telephone" class="form-control" type="number" placeholder="Telefone" />
+				</div>
+				<div class="col-md-6">
+					<h3>Retorno Dos Dados </h3>
+					<ul id="resultado" class="list-unstyled"></ul>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<button onclick="send();" class="btn btn-primary btn-md">Requisitar array</button>
+			</div>
+		</div>
+		
+<!-- Add Jquery 3.2.1 minif CDN-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<h4 class="text-center" style="color: #ccc">Criado Por Acidiney Dias</h4>
+	<script type="text/javascript">
+		function send() {
+				var name  = $('#name').val();
+				var email = $('#email').val();
+				var telephone  = $('#telephone').val();
+
+				$.ajax({
+	        			url:"controller.php",
+	        			type:"POST",
+	        			data:{ 'name': name, 
+	        				   'email': email,
+	        				   'telephone': telephone
+	        				},
+	        			dataType: 'json',
+						success: function(data){
+							if(data.status == true)
+							{
+								$('#resultado').html(data.msg);
+							}
+							else
+							{
+								$('#resultado').html("<h4 class='alert-danger text-center'>Ocorreu um erro, verifique os seus dados.</h4>");
+							}
+						}
+	        		});
+		}
+	</script>
+</body>
+</html>

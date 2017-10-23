@@ -1,7 +1,7 @@
 <?php
 
 
-use DojoPHP\MyCalculadora;
+use DojoPHP\CalculadorasDeIdade\MyCalculadora;
 use PHPUnit\Framework\TestCase as PHPUnit;
 
 class MyCalculadoraTest extends PHPUnit

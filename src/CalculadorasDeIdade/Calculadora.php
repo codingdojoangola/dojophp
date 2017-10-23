@@ -1,6 +1,6 @@
 <?php
 
-namespace DojoPHP\Desafios;
+namespace DojoPHP\CalculadorasDeIdade;
 
 class Calculadora
 {

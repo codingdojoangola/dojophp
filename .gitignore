@@ -1,6 +1,7 @@
 #Composer
 /vendor/
-composer.lock
+#composer.lock
 *.log
 /.ideia/
 /build/
+.idea
