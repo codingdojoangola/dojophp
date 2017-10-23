@@ -1,0 +1,21 @@
+{
+  "projectName": "dojophp",
+  "projectOwner": "codingdojoangola",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "curado",
+      "name": "curado",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2355310?v=4",
+      "profile": "https://github.com/curado",
+      "contributions": [
+        "eventOrganizing",
+        "financial"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/codingdojoangola/dojophp.svg?branch=master)](https://travis-ci.org/codingdojoangola/dojophp)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 # dojophp
 Desafios e metas de estudo PHP
@@ -61,3 +62,14 @@ Os desafios são separados por tema/categoria:
 
 
 Onde cada um dos tópicos acima são componentes de base e usado na criação de uma aplicação dinámica com PHP.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars2.githubusercontent.com/u/2355310?v=4" width="100px;"/><br /><sub>curado</sub>](https://github.com/curado)<br />[📋](#eventOrganizing-curado "Event Organizing") [💵](#financial-curado "Financial") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
