@@ -24,15 +24,11 @@
       "profile": "https://josecage.github.io",
       "contributions": [
         "question",
-        "blog",
         "bug",
-        "code",
         "doc",
         "example",
         "ideas",
-        "infra",
-        "review",
-        "test"
+        "review"
       ]
     }
   ]
