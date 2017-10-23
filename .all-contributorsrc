@@ -16,6 +16,24 @@
         "eventOrganizing",
         "financial"
       ]
+    },
+    {
+      "login": "JoseCage",
+      "name": "José Cage ",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4200487?v=4",
+      "profile": "https://josecage.github.io",
+      "contributions": [
+        "question",
+        "blog",
+        "bug",
+        "code",
+        "doc",
+        "example",
+        "ideas",
+        "infra",
+        "review",
+        "test"
+      ]
     }
   ]
 }
