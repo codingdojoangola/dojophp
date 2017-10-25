@@ -44,6 +44,11 @@ footer {
 	display: inline-block;
 }
 
+.main_title{
+
+	color: #CAEBF2;
+}
+
 .avatar_desc{
 
 vertical-align: top;
