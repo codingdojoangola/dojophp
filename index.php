@@ -71,18 +71,18 @@ h1,h2,h3,h4,h5,h6{
 </head>
 <body>
 	<?php
-	/*
-	Comando usado para obter o conteudo do ficheiro json numa variavel
-	*/
-	$my_file=file_get_contents("data/codingdojo.json");
 
-	/*
+	//Comando usado para obter o conteudo do ficheiro json numa variavel
 
-	Transformar a variavel json em um array
-	*/
-	$json_info=json_decode($my_file,true);
+	$my_file=file_get_contents('data/codingdojo.json');
+
+
+
+	/// Transformar a variavel json em um array
+
+	$json_info = json_decode($my_file,true);
 //echo '<pre>'.print_r($json_info,true) .'</pre>';
-	 ?>
+	?>
 <div class="container">
 	<h1 class="text-center">Coding Dojo Angola</h1>
 
@@ -95,7 +95,7 @@ h1,h2,h3,h4,h5,h6{
 	<button class="btn btn-default" data-toggle="collapse" data-target="#demo">Ver o ficheiro json em Array</button>
 
 	<div id="demo" class="collapse">
-	<?php echo '<pre>'.print_r($json_info,true) .'</pre>'; ?>
+	<?php echo '<pre>'.print_r($json_info, true).'</pre>'; ?>
 </div>
 </div>
 
@@ -108,32 +108,19 @@ h1,h2,h3,h4,h5,h6{
 	</div>
 	<div class="row">
 
-<?php
+		<?php
 
-
-
-
-
-
-
-
-//print_r ($json_info['membros']);
-
-/*
-Fazer a leitura de uma parte do array
-
-*/
 foreach ($json_info['membros'] as $key => $value) {
-	# code...
+
   echo '<div class="col-sm-3 thumbnail">';
 	echo '<img class="img-responsive  avatar" src="./img/ninja.png" alt="ninja logo"/>';
 	echo '<br/>';
-	echo '<span class="text-center avatar_desc">'.$value['nome'].'</span><br/>';
+	echo '<span class="avatar_desc">'.$value['nome'].'</span><br/>';
 	echo '<span class="text-center avatar_desc">'.$value['cargo'].'</span><br/>';
 	echo '</div>';
 
 }
- ?>
+	?>
 
  </div>
  <div class="col-xs-12">
