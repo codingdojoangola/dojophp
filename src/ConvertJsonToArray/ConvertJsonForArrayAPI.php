@@ -15,11 +15,11 @@ class ConvertJsonForArrayAPI
 	 public function __construct($source)
 	 {
 		 $this->source = $source;
-		 $this->data = file_get_contents($source);
 	 }
 
 	 public function Itera()
 	 {
+		 $this->data = file_get_contents($this->source);
 		 return json_decode($this->data, true);
 	 }
 }
