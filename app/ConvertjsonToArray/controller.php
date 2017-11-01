@@ -41,7 +41,6 @@ use DojoPHP\ConvertJsonToArray\ConvertJsonForArrayAPI;
   $elements['list'] = "<ul class='list-inline'>";
   // Criando elementos que serão exibidos(Membros)
    foreach ($membros as $membro) {
-
        $img = $membro['avatar'] ? $membro['avatar'] : 'atomix_user31.png';
        $elements['list'] .= '<li><div class="header">
         <img src='.$img.' title='.$membro['cargo'].'/>
