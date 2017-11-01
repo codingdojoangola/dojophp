@@ -25,11 +25,11 @@ class ArrayInformationsAPI
 
     public function CreateArrayWithInformation()
     {
-        $this->data = 
+        $this->data =
           [
-            'E-mail' => $this->email,
-            'Name' => $this->name,
-            'Telefone' => $this->telephone, 
+            'E-mail'   => $this->email,
+            'Name'     => $this->name,
+            'Telefone' => $this->telephone,
          ];
 
         return $this->data;
