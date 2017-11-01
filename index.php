@@ -78,7 +78,8 @@ h1,h2,h3,h4,h5,h6{
 
     /// Transformar a variavel json em um array
 
-    $json_info = json_decode($my_file, true);
+    $json_info = json_decode($my_file,true);
+  
 //echo '<pre>'.print_r($json_info,true) .'</pre>';
     ?>
 <div class="container">
@@ -109,12 +110,14 @@ h1,h2,h3,h4,h5,h6{
 		<?php
 
 foreach ($json_info['membros'] as $key => $value) {
+  
     echo '<div class="col-sm-3 thumbnail">';
     echo '<img class="img-responsive  avatar" src="./img/ninja.png" alt="ninja logo"/>';
     echo '<br/>';
     echo '<span class="avatar_desc">'.$value['nome'].'</span><br/>';
     echo '<span class="text-center avatar_desc">'.$value['cargo'].'</span><br/>';
     echo '</div>';
+  
 }
     ?>
 
