@@ -50,11 +50,10 @@
            <hr />
            <p class="red"> * PREVIEW</p>
         </div>
-        <iframe src="http://dojo-php.herokuapp.com/ConvertjsonToArray/" width="100%" height="600" style="border:0px"></iframe>        
+        <iframe src="http://localhost/dojophp/app/ConvertjsonToArray/" width="100%" height="600" style="border:0px"></iframe>        
     </div>
     <script id="frame" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>    
     <script>
-    
     function onSubmit(){
         $.ajax({
 	        url:"controller.php",
@@ -66,7 +65,9 @@
             }, 
 			success: function(data){
 				$('#return').html(data);
-                document.getElementById('frame').contentDocument.location.reload(true);
+                $('iframe').each(function(){
+                    this.contentWindow.location.reload(true);
+                });
 			}
 	    });
     }
