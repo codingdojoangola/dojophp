@@ -1,9 +1,11 @@
 <?php
 
-      use DojoPHP\ConvertJsonToArray\ConvertJsonForArrayAPI;
-      use PHPUnit\Framework\TestCase;
+	  use DojoPHP\ConvertJsonToArray\ConvertJsonForArrayAPI;
+	  use PHPUnit\Framework\TestCase;
 
-      /**
+	  /**
+
+
  *@author Acidiney Dias
  *
  *@link https://www.github.com/acidiney
@@ -12,18 +14,19 @@
  */
 class ConvertJsonForArrayTest extends TestCase
 {
-    public $url;
-    public $instance;
+	 public $url;
+	 public $instance;
 
-    public function testGetData()
-    {
-        $this->url = 'https://github.com/codingdojoangola/dojophp/raw/desafios/data/codingdojo.json';
-        $this->instance = new ConvertJsonForArrayAPI($this->url);
+	 public function testGetData()
+	 {
+		 $this->url = './data/codingdojo.json';
+		 $this->instance = new ConvertJsonForArrayAPI($this->url);
 
-        $data = $this->instance->Itera();
+		 $data = $this->instance->Itera();
 
-        $this->assertNotEmpty($data);
-        $this->assertInternalType('array', $data);
-        $this->assertArrayHasKey('membros', $data);
-    }
+		 $this->assertNotEmpty($data);
+		 $this->assertInternalType('array', $data);
+		 $this->assertArrayHasKey('membros', $data);
+	 }
 }
+

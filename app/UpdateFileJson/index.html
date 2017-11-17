@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atualizando ficheiro do dojo</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <style>
+        *{
+            font-family:'Inconsolata', monospace;
+            font-size: 14pt;
+        }
+        body{
+            color:#555;
+        }
+        h3{
+            padding-bottom: 12px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .red{
+            background: transparent !important;
+            color: #F44336;
+        }
+        #avatar
+        {
+            font-size: 12pt !important;
+            font-weight: lighter;
+        }
+        .btn{
+            background-color: #81d4fa;
+        }
+    </style>
+</head>
+<body class="white">
+    <div class="">
+        <h3 class="center-align truncate"> Adicionando novos dados ao arquivo json </h3>
+        
+        <div class="container">
+           <p class="red">* Preencha os campos </p>
+               <label for="name">*Nome</label>
+               <input type="text" class="form-control" name="name" id="name" placeholder=" Eg. Acidiney Dias "/>
+               <label for="function">*Função</label>
+               <input type="text" class="form-control" name="function" id="function" placeholder=" Eg. Desenvolvedor PHP "/>
+            <button onclick="onSubmit()" class="btn">Carregar novo registro</button>
+           <p class="red"> Status de retorno </p>
+           <div id="return"></div>
+           <hr />
+           <p class="red"> * PREVIEW</p>
+        </div>
+        <iframe src=".././ConvertjsonToArray/" width="100%" height="600" style="border:0px"></iframe>        
+    </div>
+    <script id="frame" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>    
+    <script>
+    function onSubmit(){
+        $.ajax({
+	        url:"controller.php",
+	        type:"POST",
+	        dataType: 'json',
+            data: {
+                "name": $("#name").val(),
+                "function": $("#function").val(),
+            }, 
+			success: function(data){
+				$('#return').html(data);
+                $('iframe').each(function(){
+                    this.contentWindow.location.reload(true);
+                });
+			}
+	    });
+    }
+    </script>
+</body>
+</html>
