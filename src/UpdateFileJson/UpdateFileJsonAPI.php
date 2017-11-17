@@ -44,7 +44,7 @@ class UpdateFileJsonAPI
         // In the end, I'm add the new data in my file original
         if(file_put_contents($this->source, $this->alterFile)):
             return json_encode(["message" => "File updated with success!"], 201); else:
-            return json_encode(["message" => "File not was updated!"], 400);            
+            return json_encode(["message" => "File was not updated!"], 400);            
         endif;
     }
 }
