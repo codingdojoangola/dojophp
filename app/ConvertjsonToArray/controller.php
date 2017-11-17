@@ -34,7 +34,6 @@ use DojoPHP\ConvertJsonToArray\ConvertJsonForArrayAPI;
         <td>".$base['app'].'</td>
         <td>'.$base['email'].'</td>
         <td><a target="_blank" href='.$base['url'].'>Open Site</a></td>
-
       </tr>
     </tbody>
   </table>';
