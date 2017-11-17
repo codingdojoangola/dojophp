@@ -1,0 +1,55 @@
+{
+  "projectName": "dojophp",
+  "projectOwner": "codingdojoangola",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "curado",
+      "name": "curado",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2355310?v=4",
+      "profile": "https://github.com/curado",
+      "contributions": [
+        "eventOrganizing",
+        "financial"
+      ]
+    },
+    {
+      "login": "JoseCage",
+      "name": "José Cage ",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4200487?v=4",
+      "profile": "https://josecage.github.io",
+      "contributions": [
+        "question",
+        "bug",
+        "doc",
+        "example",
+        "ideas",
+        "review"
+      ]
+    },
+    {
+      "login": "e200",
+      "name": "Eleandro Duzentos",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/20504726?v=4",
+      "profile": "http://e200.github.io",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "acidiney",
+      "name": "Acidiney Dias",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/24493328?v=4",
+      "profile": "https://www.facebook.com/acidiney.dias",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    }
+  ]
+}

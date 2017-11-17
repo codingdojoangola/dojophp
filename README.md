@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/codingdojoangola/dojophp.svg?branch=master)](https://travis-ci.org/codingdojoangola/dojophp)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
 # dojophp
 Desafios e metas de estudo PHP
@@ -61,3 +62,14 @@ Os desafios são separados por tema/categoria:
 
 
 Onde cada um dos tópicos acima são componentes de base e usado na criação de uma aplicação dinámica com PHP.
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+| [<img src="https://avatars2.githubusercontent.com/u/2355310?v=4" width="100px;"/><br /><sub>curado</sub>](https://github.com/curado)<br />[📋](#eventOrganizing-curado "Event Organizing") [💵](#financial-curado "Financial") | [<img src="https://avatars2.githubusercontent.com/u/4200487?v=4" width="100px;"/><br /><sub>José Cage </sub>](https://josecage.github.io)<br />[💬](#question-JoseCage "Answering Questions") [🐛](https://github.com/codingdojoangola/dojophp/issues?q=author%3AJoseCage "Bug reports") [📖](https://github.com/codingdojoangola/dojophp/commits?author=JoseCage "Documentation") [💡](#example-JoseCage "Examples") [🤔](#ideas-JoseCage "Ideas, Planning, & Feedback") [👀](#review-JoseCage "Reviewed Pull Requests") | [<img src="https://avatars0.githubusercontent.com/u/20504726?v=4" width="100px;"/><br /><sub>Eleandro Duzentos</sub>](http://e200.github.io)<br />[💻](https://github.com/codingdojoangola/dojophp/commits?author=e200 "Code") [⚠️](https://github.com/codingdojoangola/dojophp/commits?author=e200 "Tests") | [<img src="https://avatars0.githubusercontent.com/u/24493328?v=4" width="100px;"/><br /><sub>Acidiney Dias</sub>](https://www.facebook.com/acidiney.dias)<br />[💻](https://github.com/codingdojoangola/dojophp/commits?author=acidiney "Code") [⚠️](https://github.com/codingdojoangola/dojophp/commits?author=acidiney "Tests") |
+| :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!

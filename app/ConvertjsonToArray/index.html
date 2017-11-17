@@ -9,8 +9,13 @@
 		.container
 		{
 			box-sizing: border-box;
+<<<<<<< HEAD
 			padding-top:5%;
 
+=======
+			padding-top:5%; 
+			
+>>>>>>> 6f5974ba3bdf6b90be4d5f374a80f1ab78d833e2
 		}
 		.panel
 		{
@@ -31,14 +36,23 @@
 		}
 	</style>
 </head>
+<<<<<<< HEAD
 <body onload="carregar();">
 	<div class="container">
+=======
+<body onload="carregar();"> 
+	<div class="container">	
+>>>>>>> 6f5974ba3bdf6b90be4d5f374a80f1ab78d833e2
 		<div class="panel panel-warning">
 			<div class="panel-heading">
 				<h3 class="panel-title"><b>Caminho do arquivo: </b> data/codingdojo.json</h3>
 			</div>
 			<div class="panel-body" id="carregamento">
+<<<<<<< HEAD
 
+=======
+				
+>>>>>>> 6f5974ba3bdf6b90be4d5f374a80f1ab78d833e2
 			</div>
 		</div>
 		<h3> Lista de membros </h3>
@@ -57,6 +71,10 @@
 				$.ajax({
 	        			url:"controller.php",
 	        			type:"POST",
+<<<<<<< HEAD
+=======
+	        			data:{'date': data, 'opt' : 1},
+>>>>>>> 6f5974ba3bdf6b90be4d5f374a80f1ab78d833e2
 	        			dataType: 'json',
 						success: function(data){
 							$('#carregamento').html(data.app);
@@ -66,4 +84,8 @@
 				}
 	</script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 6f5974ba3bdf6b90be4d5f374a80f1ab78d833e2
