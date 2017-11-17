@@ -9,7 +9,6 @@ namespace DojoPHP\ConvertJsonToArray;
  */
 class ConvertJsonForArrayAPI
 {
-<<<<<<< HEAD
 	 public $source;
 	 public $data;
 
@@ -23,19 +22,4 @@ class ConvertJsonForArrayAPI
 		 $this->data = file_get_contents($this->source);
 		 return json_decode($this->data, true);
 	 }
-=======
-    public $source;
-    public $data;
-
-    public function __construct($source)
-    {
-        $this->source = $source;
-        $this->data = file_get_contents($source);
-    }
-
-    public function Itera()
-    {
-        return json_decode($this->data, true);
-    }
->>>>>>> 6f5974ba3bdf6b90be4d5f374a80f1ab78d833e2
 }

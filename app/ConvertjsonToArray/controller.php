@@ -33,11 +33,8 @@ use DojoPHP\ConvertJsonToArray\ConvertJsonForArrayAPI;
       <tr>
         <td>".$base['app'].'</td>
         <td>'.$base['email'].'</td>
-<<<<<<< HEAD
         <td><a target="_blank" href='.$base['url'].'>Open Site</a></td>
-=======
-        <td><a href='.$base['url'].'>Open Site</a></td>
->>>>>>> 6f5974ba3bdf6b90be4d5f374a80f1ab78d833e2
+
       </tr>
     </tbody>
   </table>';
@@ -45,10 +42,7 @@ use DojoPHP\ConvertJsonToArray\ConvertJsonForArrayAPI;
   $elements['list'] = "<ul class='list-inline'>";
   // Criando elementos que serão exibidos(Membros)
    foreach ($membros as $membro) {
-<<<<<<< HEAD
 
-=======
->>>>>>> 6f5974ba3bdf6b90be4d5f374a80f1ab78d833e2
        $img = $membro['avatar'] ? $membro['avatar'] : 'atomix_user31.png';
        $elements['list'] .= '<li><div class="header">
         <img src='.$img.' title='.$membro['cargo'].'/>
