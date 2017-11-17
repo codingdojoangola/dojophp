@@ -9,8 +9,7 @@
 		.container
 		{
 			box-sizing: border-box;
-			padding-top:5%; 
-			
+			padding-top:5%;
 		}
 		.panel
 		{
@@ -31,14 +30,13 @@
 		}
 	</style>
 </head>
-<body onload="carregar();"> 
-	<div class="container">	
+<body onload="carregar();">
+	<div class="container">
 		<div class="panel panel-warning">
 			<div class="panel-heading">
 				<h3 class="panel-title"><b>Caminho do arquivo: </b> data/codingdojo.json</h3>
 			</div>
 			<div class="panel-body" id="carregamento">
-				
 			</div>
 		</div>
 		<h3> Lista de membros </h3>
@@ -57,7 +55,6 @@
 				$.ajax({
 	        			url:"controller.php",
 	        			type:"POST",
-	        			data:{'date': data, 'opt' : 1},
 	        			dataType: 'json',
 						success: function(data){
 							$('#carregamento').html(data.app);
