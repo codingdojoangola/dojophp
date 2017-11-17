@@ -26,7 +26,7 @@ class UpdateFileJsonAPI
     public function UpdateFile()
     {
 
-       // var_dump($this->data); echo "<br />";
+        // var_dump($this->data); echo "<br />";
         // I'm  open file Json passed
         $this->openFile = file_get_contents($this->source);
 
@@ -42,7 +42,7 @@ class UpdateFileJsonAPI
         $this->alterFile = json_encode($this->alterFile);
 
         // In the end, I'm add the new data in my file original
-        if(file_put_contents($this->source, $this->alterFile)):
+        if (file_put_contents($this->source, $this->alterFile)):
             return json_encode(["message" => "File updated with success!"], 201); else:
             return json_encode(["message" => "File was not updated!"], 400);            
         endif;
