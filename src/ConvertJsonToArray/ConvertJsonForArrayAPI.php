@@ -20,6 +20,7 @@ class ConvertJsonForArrayAPI
 	 public function Itera()
 	 {
 		 $this->data = file_get_contents($this->source);
+
 		 return json_decode($this->data, true);
 	 }
 }
